@@ -23,7 +23,7 @@ export class BandComponent implements OnInit{
   }
 
   goToDetailPage(clickedMember: Member) {
-    this.router.navigate(['members', clickedMember.id]);
+    // this.router.navigate(['members', clickedMember.id]);
   };
 
 }

@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Member to Band</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+
+      <div>
+        <label>Member Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Enter Primary Instrument</label>
+        <br>
+        <input #newInstrument>
+      </div>
+
+      <div>
+        <label>Enter Bio</label>
+        <br>
+        <textarea #newBio></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newInstrument.value, newBio.value); newName.value=''; newInstrument.value=''; newBio.value=''">Add</button>
+    </div>
+  </div>
+</div>
