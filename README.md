@@ -4,6 +4,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## Setup and Install
 Run the following in your terminal:
+
         `$ npm install -g angular-cli`
         `$ npm install -g typescript`
         `$ npm install bower -g`
