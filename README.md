@@ -1,9 +1,16 @@
-# Band Roster Information Website
+# Band Roster Manager Website
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
 ## Setup and Install
-
+Run the following in your terminal:
+`$ npm install -g angular-cli`
+`$ npm install -g typescript`
+`$ npm install bower -g`
+`$ bower init`
+`$ bower install bootstrap --save`
+`apm install atom-typescript
+`
 This project uses the Firebase cloud service to store data. You'll need a Firebase account to setup the app. Create an account at http://firebase.google.com, then you should be taken to a user dashboard area with an option to Create a New Project. Select this option, provide a name for your new project, and select your Country/region from the drop-down menu. You'll then be taken to an "Overview" area. Where you'll be offered three options:
 
         Add Firebase to your iOS app
