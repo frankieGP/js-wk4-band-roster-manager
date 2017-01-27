@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Member } from '../member.model';
 import { Router } from '@angular/router';
 import { MemberService } from '../member.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
 
 @Component({
   selector: 'app-band',
@@ -11,8 +13,9 @@ import { MemberService } from '../member.service';
 
 })
 export class BandComponent implements OnInit{
+  members: FirebaseListObservable<any[]>;
 
-members: Member[];
+// members: Member[];
 
   constructor(private router: Router, private memberService: MemberService){}
 

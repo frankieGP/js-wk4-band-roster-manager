@@ -1,0 +1,38 @@
+{ "members": [{
+  "name": "Stu Mackenzie",
+  "instrument": "Vocals",
+  "id": "1"
+  }, {
+  "name": "Ambrose Kenny Smith",
+  "instrument": "Keyboards",
+  "id": "2"
+
+  }, {
+  "name": "Cook Craig",
+  "instrument": "Guitar",
+  "id": "3"
+
+  }, {
+  "name": "Joey Walker",
+  "instrument": "Guitar",
+  "id": "4"
+
+  }, {
+  "name": "Lucas Skinner",
+  "instrument": "Bass",
+  "id": "5"
+
+  }, {
+  "name": "Eric Moore",
+  "instrument": "Drums",
+  "id": "6"
+
+  }, {
+  "name": "Michael Cavanagh",
+  "instrument": "Drums",
+  "id": "7"
+
+
+
+  }]
+}
