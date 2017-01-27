@@ -1,25 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member.model';
 import { Router } from '@angular/router';
+import { MemberService } from '../member.service';
 
 @Component({
   selector: 'app-band',
   templateUrl: './band.component.html',
-  styleUrls: ['./band.component.css']
-})
-export class BandComponent {
+  styleUrls: ['./band.component.css'],
+  providers: [MemberService]
 
-  constructor(private router: Router){}
-  
-  members: Member[] =[
-    new Member("Stu Mackenzie", "Vocals", 1),
-    new Member("Ambrose Kenny Smith", "Keyboards", 2),
-    new Member("Cook Craig", "Guitar", 3),
-    new Member("Joey Walker", "Guitar", 4),
-    new Member("Lucas Skinner", "Bass", 5),
-    new Member("Eric Moore", "Drums", 6),
-    new Member("Michael Cavanagh", "Drums", 7)
-  ];
+})
+export class BandComponent implements OnInit{
+
+members: Member[];
+
+  constructor(private router: Router, private memberService: MemberService){}
+
+  ngOnInit(){
+    this.members = this.memberService.getMembers();
+  }
 
   goToDetailPage(clickedMember: Member) {
     this.router.navigate(['members', clickedMember.id]);
