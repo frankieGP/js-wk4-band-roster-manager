@@ -22,7 +22,14 @@ export class MemberService {
     this.members.push(newMember);
   }
 
-  getMemberById(memberId: number){
-    return this.angularFire.database.object('members/' + albumId);
+  getMemberById(memberId: string){
+    return this.angularFire.database.object('members/' + memberId);
+}
+
+updateMember(localUpdatedMember){
+  var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+  memberEntryInFirebase.update({name: localUpdatedMember.name,
+                              instrument: localUpdatedMember.instrument,
+                              bio: localUpdatedMember.bio});
 }
 }

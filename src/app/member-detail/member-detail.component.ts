@@ -21,7 +21,6 @@ export class MemberDetailComponent implements OnInit {
     private memberService: MemberService
   ) { }
 
-  members: Member[];
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

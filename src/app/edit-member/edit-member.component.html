@@ -1,0 +1,14 @@
+<h4>Edit Band Member</h4>
+
+<label>New Band Member:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>Primary Instrument</label>
+<input [(ngModel)]="selectedMember.instrument">
+<br>
+
+<label>New Bio:</label>
+<input [(ngModel)]="selectedMember.bio">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>

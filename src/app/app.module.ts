@@ -11,6 +11,7 @@ import { BandComponent } from './band/band.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AngularFireModule } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     AboutComponent,
     BandComponent,
     MemberDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditMemberComponent
   ],
   imports: [
     BrowserModule,
