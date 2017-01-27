@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 import { FirebaseObjectObservable } from 'angularfire2';
+import {AngularFire, FirebaseListObservable} from 'angularfire2';
 
 @Component({
   selector: 'app-member-detail',
@@ -17,7 +18,8 @@ export class MemberDetailComponent implements OnInit {
   memberToDisplay;
 
   constructor(
-    private route: ActivatedRoute, private location: Location,
+    private route: ActivatedRoute,
+    private location: Location,
     private memberService: MemberService
   ) { }
 

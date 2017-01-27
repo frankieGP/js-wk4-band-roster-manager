@@ -1,1 +1,12 @@
 <h2>BAND ROSTER</h2>
+<select (change)="onChange($event.target.value)">
+  <option selected="selected">All Members</option>
+  <option>Vocals</option>
+  <option>Guitar</option>
+  <option>Bass</option>
+  <option>Drums</option>
+  <option>Keyboards</option>
+</select>
+<div *ngFor="let member of members | async | instrumentType:instrumentFilter" (click)="goToDetailPage(member)">
+  <h4>{{member.name}}</h4>
+</div>

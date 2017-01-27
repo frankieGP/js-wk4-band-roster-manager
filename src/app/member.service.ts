@@ -32,4 +32,8 @@ updateMember(localUpdatedMember){
                               instrument: localUpdatedMember.instrument,
                               bio: localUpdatedMember.bio});
 }
+deleteMember(localMemberToDelete){
+  var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+  memberEntryInFirebase.remove();
+}
 }

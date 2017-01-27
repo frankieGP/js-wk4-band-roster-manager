@@ -12,7 +12,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AngularFireModule } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
-
+import { InstrumentTypePipe } from './instrumentType.pipe';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -28,7 +28,8 @@ export const firebaseConfig = {
     BandComponent,
     MemberDetailComponent,
     AdminComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    InstrumentTypePipe,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +38,7 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })
