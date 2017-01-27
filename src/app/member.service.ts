@@ -8,7 +8,8 @@ export class MemberService {
   members: FirebaseListObservable<any[]>;
 
 
-  constructor(private angularFire: AngularFire) {    this.members = angularFire.database.list('members');
+  constructor(private angularFire: AngularFire) {
+    this.members = angularFire.database.list('members');
 
 
   }
